@@ -208,7 +208,7 @@
       margin-top: 81px;
       @media (max-width: 767px) {
         gap: 50px;
-        margin-top: 150px;
+        margin-top: 80px;
       }
     }
     &__item {
@@ -225,10 +225,14 @@
       max-width: 526px;
       height: 32px;
 
-      font-family: "Duru Sans";
+      font-family: "DurSans";
       font-style: normal;
       font-weight: 800;
       font-size: 48px;
+      @media (max-width: 767px) {
+        font-size: 36px;
+        line-height: 40px;
+      }
       line-height: 52px;
       color: #1d2530;
     }
@@ -286,13 +290,14 @@
       line-height: 32px;
       font-feature-settings: "salt" on, "liga" off;
       color: #1d2530;
+      text-align: center;
     }
     &__items {
       display: flex;
       justify-content: space-between;
       overflow: auto;
       gap: 30px;
-      padding-top: 30px;
+      padding-top: 60px;
     }
     &__item {
       width: 400px;
@@ -372,6 +377,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
+      margin-top: 120px;
       @media (max-width: 799px) {
         align-items: center;
         justify-content: center;
@@ -396,10 +402,12 @@
       font-style: normal;
       font-weight: 800;
       font-size: 46px;
-      line-height: 64px;
+      line-height: 50px;
       font-feature-settings: "salt" on, "liga" off;
       color: #1d2530;
-      @media (max-width:767px) {
+      text-align: center;
+      margin-bottom: 50px;
+      @media (max-width: 767px) {
         max-width: 400px;
         display: flex;
         justify-content: center;
@@ -422,6 +430,14 @@
       width: 232px;
     }
 
+    &__item:nth-child(2) {
+      margin-top: 60px;
+      border: 1px solid red;
+      
+      @media (max-width: 767px) {
+        margin: 0;
+      }
+    }
     .img1 {
       position: absolute;
       left: 15.18%;
@@ -470,12 +486,6 @@
       }
     }
 
-    &__item:nth-child(2) {
-      margin-top: 60px;
-      @media (max-width: 767px) {
-        margin: 0;
-      }
-    }
     &__text {
       display: flex;
       flex-direction: column;
@@ -557,8 +567,8 @@
     }
     &__undov {
       max-width: 50%;
-      position: relative; 
-      @media (max-width:767px) {
+      position: relative;
+      @media (max-width: 767px) {
         position: absolute;
         left: 0px;
         top: 0px;
@@ -577,19 +587,13 @@
       font-feature-settings: "salt" on, "liga" off;
       color: #1d2530;
       display: flex;
-      justify-content: center;
-      position: absolute;
-      left: 450px;
-      @media (max-width:1000px) {
-        position: static;
-      }
-     
+      text-align: center;
     }
     &__items {
       width: 100%;
       display: flex;
       margin-top: 20px;
-      overflow: scroll;
+      overflow: auto;
       justify-content: space-between;
     }
   }
