@@ -527,12 +527,15 @@ h6 {
   gap: 46px;
   width: 232px;
 }
-.main .join__item:nth-child(2) {
+.main .join #join__item {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  width: 232px;
   margin-top: 60px;
-  border: 1px solid red;
 }
 @media (max-width: 767px) {
-  .main .join__item:nth-child(2) {
+  .main .join #join__item {
     margin: 0;
   }
 }
