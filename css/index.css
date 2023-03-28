@@ -144,7 +144,7 @@ h6 {
 }
 .header__menubtn {
   display: none;
-  color: #685ed6;
+  color: #5246bd;
 }
 @media (max-width: 767px) {
   .header__menubtn {
@@ -159,7 +159,7 @@ h6 {
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: #1d2530;
+  color: #232c38;
 }
 .header__item:hover {
   font-family: "Duru Sans";
