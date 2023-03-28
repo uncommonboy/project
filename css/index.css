@@ -164,9 +164,6 @@ h6 {
 .header__item:hover {
   font-family: "Duru Sans";
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
   color: #685ed6;
 }
 
