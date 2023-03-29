@@ -1,5 +1,13 @@
 @import "null_styles.scss";
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../gilroy/gilroy/Gilroy-Medium.ttf');
+}
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../gilroy/gilroy/Gilroy-Lignt.ttf');
+}
 .wraper {
   min-height: 100vh;
   display: flex;
@@ -28,7 +36,7 @@
     b {
       width: 76px;
       height: 22px;
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 700;
       font-size: 28.1106px;
@@ -58,14 +66,14 @@
     }
   }
   &__item {
-    font-family: "Duru Sans";
+    font-family: "Gilroy";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     color: #232c38;
     &:hover {
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       // font-weight: 700;
       color: #685ed6;
@@ -114,7 +122,7 @@
     &__title {
       max-width: 383px;
       height: 120px;
-      font-family: "GDuru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 800;
       font-size: 54px;
@@ -128,7 +136,7 @@
       max-width: 482px;
       height: 102px;
       padding-top: 65px;
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 400;
       font-size: 27px;
@@ -158,7 +166,7 @@
       p {
         width: 104px;
         height: 24px;
-        font-family: "Duru Sans";
+        font-family: "Gilroy";
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -244,7 +252,7 @@
       max-width: 526px;
       height: 32px;
 
-      font-family: "DurSans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 800;
       font-size: 48px;
@@ -259,7 +267,7 @@
     &__p {
       max-width: 400px;
       display: flex;
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -271,7 +279,7 @@
       display: block;
       max-width: 428px;
       height: 32px;
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 600;
       font-size: 24px;
@@ -290,7 +298,7 @@
       align-items: center;
     }
     &__title {
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 800;
       font-size: 46px;
@@ -302,7 +310,7 @@
     &__description {
       max-width: 426px;
       height: 32px;
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
