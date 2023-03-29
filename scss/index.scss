@@ -71,6 +71,27 @@
       color: #685ed6;
     }
   }
+
+  &__mbtn {
+    width: 237px;
+    height: 286px;
+
+    background: #f8fbff;
+    display: none;
+  }
+
+  &__cancel{
+    display: flex;
+    justify-content:flex-end ;
+  }
+
+  &__mitems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    margin-left: 40px;
+  }
 }
 
 .main {
@@ -632,7 +653,7 @@
       //   height: 100%;
       // }
       @media (max-width: 767px) {
-      margin-right: 100px;
+        margin-right: 100px;
       }
     }
     &__items {
