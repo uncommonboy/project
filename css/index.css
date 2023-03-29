@@ -299,6 +299,11 @@ h6 {
     -webkit-filter: blur(0px);
   }
 }
+.main .hero__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .main .online__main {
   min-height: 650px;
   display: flex;
@@ -518,7 +523,7 @@ h6 {
 }
 .main .join__maintitle {
   align-self: center;
-  font-family: "Duru Sans";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 46px;
@@ -598,7 +603,7 @@ h6 {
   left: 74.44%;
   top: 15.33%;
 }
-@media (max-width: 800px) {
+@media (max-width: 1040px) {
   .main .join .img1,
   .main .join .img2,
   .main .join .img3,
@@ -679,6 +684,7 @@ h6 {
 @media (max-width: 767px) {
   .main .clients__header {
     margin-right: 0px;
+    justify-content: center;
   }
 }
 .main .clients__undov {
@@ -705,6 +711,7 @@ h6 {
   color: #1d2530;
   display: flex;
   text-align: center;
+  justify-self: center;
 }
 .main .clients__items {
   width: 100%;
@@ -735,9 +742,9 @@ h6 {
 }
 .main .subscribe__img {
   z-index: 2;
-  padding-top: 56px;
+  margin-top: 56px;
   max-width: 100%;
-  padding-left: 100px;
+  margin-left: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -750,19 +757,25 @@ h6 {
 .main .subscribe__items {
   max-width: 100%;
   z-index: 2;
-  padding-top: 40px;
-  padding-right: 150px;
+  margin-top: 40px;
+  margin-right: 150px;
+  gap: 30px;
+  height: 100%;
 }
 @media (max-width: 767px) {
   .main .subscribe__items {
     display: flex;
+    text-align: center;
     flex-direction: column;
-    padding-left: 0px;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    margin: 0px;
   }
 }
 .main .subscribe__title {
   max-width: 445px;
-  height: 82px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
@@ -777,7 +790,7 @@ h6 {
   }
 }
 .main .subscribe__inps {
-  width: 500px;
+  max-width: 550px;
   height: 52px;
   display: flex;
   margin-top: 32px;
