@@ -2,17 +2,27 @@ const btn = document.querySelector('.header__menubtn')
 const menu = document.querySelector('.header__mbtn')
 const icon_menu= document.querySelector('#icon')
 const icon_cancel= document.querySelector('#cancel')
+const items=document.querySelectorAll('.js-item')
 
 icon_menu.addEventListener("click",  func)
 function func(){
     menu.style.display = 'block';
     icon_menu.style.display = 'none';
-    console.log('menu workign');
+    // console.log('all workign');
 }
+
 icon_cancel.addEventListener('click', func2)
 
 function func2(){
-    console.log('salm');
     menu.style.display = 'none';
     icon_menu.style.display = 'block';
+}
+
+for(let i=0;i<items.length;i++){
+    items[i].addEventListener('click',()=>{
+        console.log('ishledi');
+           alert('Please first Log in!')
+
+    })
+
 }
