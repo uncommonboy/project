@@ -24,6 +24,6 @@ function func2() {
 for (let i = 0; i < items.length; i++) {
   items[i].addEventListener("click", () => {
     console.log("ishledi");
-    alert("Please first Log in!");
+    alert("Please first Log-In to see your blongings!");
   });
 }
