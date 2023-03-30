@@ -21,6 +21,10 @@
 }
 
 .header {
+@media (max-width:767px) {
+  z-index: 2;
+}
+
   min-height: 136px;
   padding-top: 25px;
   &__contain {
@@ -104,7 +108,9 @@
 
 .main {
   flex: 1 1 auto;
-
+  @media (max-width:767px) {
+    z-index: 1;
+  }
   .hero {
     &__main {
       min-height: 538px;
@@ -128,6 +134,9 @@
       font-size: 54px;
       line-height: 60px;
       font-feature-settings: "salt" on, "liga" off;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
     .main__txt {
       z-index: 2;
@@ -144,6 +153,7 @@
       font-weight: 400;
       font-size: 27px;
       line-height: 34px;
+      text-align: center;
     }
 
     &__button {
@@ -212,6 +222,7 @@
       height: 100%;
     }
   }
+  
 
   .online {
     &__main {
@@ -247,7 +258,6 @@
       }
     }
     &__item {
-      height: 65px;
       display: flex;
       align-items: center;
     }
@@ -257,9 +267,7 @@
       margin-left: 27px;
     }
     &__title {
-      max-width: 526px;
-      height: 32px;
-
+      max-width: 326px;
       font-family: "Gilroy";
       font-style: normal;
       font-weight: 800;
@@ -800,10 +808,10 @@
       gap: 20px;
     }
   }
-&__menu{
-  display: flex;
-  flex-direction: column;
-}
+  &__menu {
+    display: flex;
+    flex-direction: column;
+  }
   &__item {
     width: 120px;
     font-family: "Gilroy";

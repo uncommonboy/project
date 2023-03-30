@@ -117,6 +117,11 @@ h6 {
   min-height: 136px;
   padding-top: 25px;
 }
+@media (max-width: 767px) {
+  .header {
+    z-index: 2;
+  }
+}
 .header__contain {
   display: flex;
   align-items: center;
@@ -195,6 +200,11 @@ h6 {
 .main {
   flex: 1 1 auto;
 }
+@media (max-width: 767px) {
+  .main {
+    z-index: 1;
+  }
+}
 .main .hero__main {
   min-height: 538px;
   position: relative;
@@ -220,6 +230,11 @@ h6 {
   line-height: 60px;
   font-feature-settings: "salt" on, "liga" off;
 }
+@media (max-width: 767px) {
+  .main .hero__title {
+    text-align: center;
+  }
+}
 .main .hero .main__txt {
   z-index: 2;
   display: flex;
@@ -235,6 +250,7 @@ h6 {
   font-weight: 400;
   font-size: 27px;
   line-height: 34px;
+  text-align: center;
 }
 .main .hero__button {
   display: flex;
@@ -345,7 +361,6 @@ h6 {
   }
 }
 .main .online__item {
-  height: 65px;
   display: flex;
   align-items: center;
 }
@@ -355,8 +370,7 @@ h6 {
   margin-left: 27px;
 }
 .main .online__title {
-  max-width: 526px;
-  height: 32px;
+  max-width: 326px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
