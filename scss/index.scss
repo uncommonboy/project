@@ -21,9 +21,9 @@
 }
 
 .header {
-@media (max-width:767px) {
-  z-index: 2;
-}
+  @media (max-width: 767px) {
+    z-index: 2;
+  }
 
   min-height: 136px;
   padding-top: 25px;
@@ -110,7 +110,7 @@
 
 .main {
   flex: 1 1 auto;
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     z-index: 1;
   }
   .hero {
@@ -224,7 +224,6 @@
       height: 100%;
     }
   }
-  
 
   .online {
     &__main {
@@ -600,6 +599,7 @@
       max-width: 100%;
       display: flex;
       flex-direction: column;
+      position: relative;
     }
     &__header {
       max-width: 100%;
@@ -614,16 +614,11 @@
     }
     &__undov {
       max-width: 50%;
-      position: relative;
       @media (max-width: 767px) {
-        position: absolute;
-        left: 0px;
-        top: 0px;
       }
     }
 
     &__title {
-      align-self: center;
       max-width: 100%;
       height: 64px;
       font-family: "Gilroy";
@@ -635,7 +630,7 @@
       color: #1d2530;
       display: flex;
       text-align: center;
-      justify-self: center;
+
     }
     &__items {
       width: 100%;

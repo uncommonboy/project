@@ -10,7 +10,7 @@ function func() {
   menu.style.position = "absolute";
   menu.style.right = "0px";
   icon_menu.style.display = "none";
-
+  menu.hover.transition = "30s";
   // console.log('all workign');
 }
 
