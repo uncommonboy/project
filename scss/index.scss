@@ -37,6 +37,7 @@
   &__logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
     b {
       width: 76px;
       height: 22px;
@@ -274,7 +275,7 @@
       margin-left: 27px;
     }
     &__title {
-      max-width: 326px;
+      max-width: 426px;
       font-family: "Gilroy";
       font-style: normal;
       font-weight: 800;
@@ -670,9 +671,9 @@
 
   .clients {
     &__main {
+      max-width: 100%;
       padding-top: 100px;
       padding-right: 0px;
-      width: 100%;
       display: flex;
       flex-direction: column;
     }
@@ -855,7 +856,7 @@
   margin-top: 50px;
 
   &__main {
-    width: 100%;
+    max-width: 100%;
     padding-top: 111px;
     display: flex;
     justify-content: space-between;
@@ -870,6 +871,7 @@
   &__logo {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     img {
       max-width: 81px;
       height: 59px;
@@ -940,4 +942,7 @@
       justify-content: center;
     }
   }
+}
+li {
+  cursor: pointer;
 }

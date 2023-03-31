@@ -131,6 +131,7 @@ h6 {
 .header__logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .header__logo b {
   width: 76px;
@@ -382,7 +383,7 @@ h6 {
   margin-left: 27px;
 }
 .main .online__title {
-  max-width: 326px;
+  max-width: 426px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
@@ -770,9 +771,9 @@ h6 {
   color: #1d2530;
 }
 .main .clients__main {
+  max-width: 100%;
   padding-top: 100px;
   padding-right: 0px;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -955,7 +956,7 @@ h6 {
   margin-top: 50px;
 }
 .footer__main {
-  width: 100%;
+  max-width: 100%;
   padding-top: 111px;
   display: flex;
   justify-content: space-between;
@@ -972,6 +973,7 @@ h6 {
 .footer__logo {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .footer__logo img {
   max-width: 81px;
@@ -1045,4 +1047,8 @@ h6 {
   .footer__txt {
     justify-content: center;
   }
+}
+
+li {
+  cursor: pointer;
 }

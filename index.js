@@ -26,3 +26,12 @@ for (let i = 0; i < items.length; i++) {
     alert("Please first Log-In to see your blongings!");
   });
 }
+
+const button = document.querySelector(".subscribe__button");
+button.addEventListener("click", send);
+
+function send() {
+  const inp = document.querySelector(".subscribe__input");
+  inp.innerHTML = "";
+  console.log(inp.value);
+}
