@@ -110,12 +110,15 @@
 }
 
 .main {
+
   flex: 1 1 auto;
   @media (max-width: 767px) {
     z-index: 1;
   }
   .hero {
+    background-color: #f2f7ff80;
     position: relative;
+    padding-top: 50px;
     &__main {
       position: relative;
       min-height: 538px;
@@ -148,7 +151,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 60px;
+      gap: 20px;
     }
     &__decription {
       max-width: 482px;
@@ -207,6 +210,7 @@
       transition: 0.1s;
     }
     &__img {
+      z-index: 2;
       @media (min-width: 767px) {
         position: absolute;
       }
@@ -220,20 +224,62 @@
         filter: blur(0px);
         -webkit-filter: blur(0px);
         // z-index: 1;
+        width: 100%;
       }
-      // width: 100%;
       height: 100%;
       right: 80px;
       bottom: 0px;
     }
-    &__back {
+    &__btn-div {
+      position: relative;
+      z-index: 2;
+      @media (max-width: 767px) {
+        align-self: center;
+      }
+    }
+    &__shadow1 {
       position: absolute;
-      width: 100%;
-      height: 100%;
+      top: 0;
+      width: 106.9px;
+      height: 140px;
+      left: -15px;
+      z-index: 1;
+      filter: blur(40px);
+    }
+    .hero__img-sh {
+      // width: 100%;
+      // height: 100%;
+      // position: relative;
+    }
+    &__shadow2 {
+      right: 170px;
+      position: absolute;
+      width: 126.9px;
+      height: 200px;
+      z-index: 1;
+      bottom: 120px;
+      filter: blur(50px);
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &__shadow3 {
+      right: 460px;
+      position: absolute;
+      width: 126.9px;
+      height: 200px;
+      z-index: 1;
+      filter: blur(50px);
+      @media (max-width: 767px) {
+        display: none;
+      }
     }
   }
 
   .online {
+    background-color: #f2f7ff80;
+    padding-top: 100px;
     &__main {
       min-height: 650px;
       display: flex;
@@ -427,6 +473,8 @@
   }
 
   .join {
+    background-color: #f2f7ff80;
+
     &__main {
       max-width: 100%;
       position: relative;
@@ -442,7 +490,7 @@
         // }
       }
     }
-    &__img {
+    .join__img {
       position: absolute;
       bottom: 0px;
       left: 0px;
@@ -633,7 +681,7 @@
       justify-content: center;
       align-items: center;
 
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 700;
       font-size: 30px;
@@ -641,7 +689,7 @@
       color: #685ed6;
     }
     &__title {
-      font-family: "Duru Sans";
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 700;
       font-size: 18px;
@@ -671,6 +719,7 @@
   }
 
   .clients {
+    background-color: #f2f7ff80;
     &__main {
       max-width: 100%;
       padding-top: 100px;
@@ -729,6 +778,7 @@
       overflow: auto;
       justify-content: space-between;
     }
+   
   }
 
   .subscribe {
@@ -901,7 +951,6 @@
     flex-direction: column;
   }
   &__item {
-    width: 120px;
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 400;

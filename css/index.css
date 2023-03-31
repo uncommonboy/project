@@ -209,7 +209,9 @@ h6 {
   }
 }
 .main .hero {
+  background-color: rgba(242, 247, 255, 0.5019607843);
   position: relative;
+  padding-top: 50px;
 }
 .main .hero__main {
   position: relative;
@@ -247,7 +249,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 60px;
+  gap: 20px;
 }
 .main .hero__decription {
   max-width: 482px;
@@ -308,6 +310,7 @@ h6 {
   transition: 0.1s;
 }
 .main .hero__img {
+  z-index: 2;
   height: 100%;
   right: 80px;
   bottom: 0px;
@@ -329,12 +332,57 @@ h6 {
   .main .hero__img {
     filter: blur(0px);
     -webkit-filter: blur(0px);
+    width: 100%;
   }
 }
-.main .hero__back {
+.main .hero__btn-div {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .main .hero__btn-div {
+    align-self: center;
+  }
+}
+.main .hero__shadow1 {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  width: 106.9px;
+  height: 140px;
+  left: -15px;
+  z-index: 1;
+  filter: blur(40px);
+}
+.main .hero__shadow2 {
+  right: 170px;
+  position: absolute;
+  width: 126.9px;
+  height: 200px;
+  z-index: 1;
+  bottom: 120px;
+  filter: blur(50px);
+}
+@media (max-width: 767px) {
+  .main .hero__shadow2 {
+    display: none;
+  }
+}
+.main .hero__shadow3 {
+  right: 460px;
+  position: absolute;
+  width: 126.9px;
+  height: 200px;
+  z-index: 1;
+  filter: blur(50px);
+}
+@media (max-width: 767px) {
+  .main .hero__shadow3 {
+    display: none;
+  }
+}
+.main .online {
+  background-color: rgba(242, 247, 255, 0.5019607843);
+  padding-top: 100px;
 }
 .main .online__main {
   min-height: 650px;
@@ -528,6 +576,9 @@ h6 {
   font-feature-settings: "salt" on, "liga" off;
   color: #ffffff;
 }
+.main .join {
+  background-color: rgba(242, 247, 255, 0.5019607843);
+}
 .main .join__main {
   max-width: 100%;
   position: relative;
@@ -541,7 +592,7 @@ h6 {
     justify-content: center;
   }
 }
-.main .join__img {
+.main .join .join__img {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -739,7 +790,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Duru Sans";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -747,7 +798,7 @@ h6 {
   color: #685ed6;
 }
 .main .join__title {
-  font-family: "Duru Sans";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -769,6 +820,9 @@ h6 {
   font-feature-settings: "salt" on, "liga" off;
   /* black */
   color: #1d2530;
+}
+.main .clients {
+  background-color: rgba(242, 247, 255, 0.5019607843);
 }
 .main .clients__main {
   max-width: 100%;
@@ -1004,7 +1058,6 @@ h6 {
   flex-direction: column;
 }
 .footer__item {
-  width: 120px;
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;

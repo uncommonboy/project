@@ -27,10 +27,10 @@ for (let i = 0; i < items.length; i++) {
   });
 }
 
-// const button = document.querySelector(".subscribe__button");
-// button.addEventListener("click", () => {
-//   const inp = document.querySelector(".subscribe__input");
-//   const org= inp.innerHTML
-//   org.remove;
-//   console.log(inp.value);
-// });
+const button = document.querySelector(".subscribe__button");
+button.addEventListener("click", () => {
+  const inp = document.querySelector(".subscribe__input");
+  inp.value = null;
+  alert("response send successfully!");
+  console.log(inp.value);
+});
