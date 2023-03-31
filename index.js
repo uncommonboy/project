@@ -27,11 +27,10 @@ for (let i = 0; i < items.length; i++) {
   });
 }
 
-const button = document.querySelector(".subscribe__button");
-button.addEventListener("click", send);
-
-function send() {
-  const inp = document.querySelector(".subscribe__input");
-  inp.innerHTML = "";
-  console.log(inp.value);
-}
+// const button = document.querySelector(".subscribe__button");
+// button.addEventListener("click", () => {
+//   const inp = document.querySelector(".subscribe__input");
+//   const org= inp.innerHTML
+//   org.remove;
+//   console.log(inp.value);
+// });
