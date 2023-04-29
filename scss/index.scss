@@ -64,8 +64,8 @@
     background-size: cover;
   }
   .main {
-    width: 480px;
-    height: 502px;
+    width: 380px;
+    height: 402px;
     background: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
     border-radius: 5px;
@@ -81,7 +81,7 @@
     &__cancel {
       color: 2.875px solid #685ed6;
       display: flex;
-      margin-left: 400px;
+      margin-left: 300px;
       margin-top: 10px;
       background-color: transparent;
       color: #685ed6;
@@ -169,6 +169,9 @@
       background: #685ed6;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
       border-radius: 6px;
+    }
+    &__button:hover {
+      box-shadow: 0.2px 0px 10px black;
     }
   }
 }

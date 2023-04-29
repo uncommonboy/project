@@ -1,26 +1,21 @@
-const menu = document.querySelector(".header__mbtn");
-const icon_menu = document.querySelector("#icon");
-const icon_cancel = document.querySelector("#cancel");
+const entry = document.querySelector(".wrap1");
+entry.addEventListener("click", (e) => {
+  if (e.target.closest(".responses__button1")) {
+    const login = document.querySelector(".sign__in");
+    const login2 = document.querySelector(".responses");
 
-icon_menu.addEventListener("click", func);
-function func() {
-  menu.style.display = "block";
-  menu.style.position = "absolute";
-  menu.style.right = "0px";
-  icon_menu.style.display = "none";
-  // console.log('all workign');
-}
+    login.style.display = "block";
+    login2.style.display = "block";
+    entry.style.display = "none";
 
-icon_cancel.addEventListener("click", func2);
+    console.log(login);
+  }
+  if (e.target.closest(".responses__button2")) {
+    const registr = document.querySelector(".registr");
 
-function func2() {
-  menu.style.display = "none";
-  icon_menu.style.display = "block";
-}
-
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////////
+    registr.style.display = "block";
+    entry.style.display = "none";
+    registr.preventDefault()();
+    console.log(registr);
+  }
+});
