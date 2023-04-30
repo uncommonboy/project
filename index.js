@@ -1,5 +1,6 @@
 const entry = document.querySelector(".wrap1");
 const sign_in = document.querySelector(".sign__in");
+const  registr=document.querySelector('.registr')
 
 const numb = "93-531-08-98";
 const password = "asilbek1234";
@@ -59,3 +60,10 @@ sign_in.addEventListener("click", (e) => {
     });
   }
 });
+
+register.addEventListener('click',(e)=>{
+  const numb_inp2=document.querySelector('.')
+  if(e.target.closest('.main__button')){
+    if()
+  }
+})
