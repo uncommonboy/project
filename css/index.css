@@ -158,12 +158,12 @@ h6 {
 .sign__in .main {
   width: 380px;
   height: 402px;
-  background: #ffffff;
+  background: #d7d4d4;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
   position: absolute;
   top: 60%;
-  left: 30%;
+  left: 52%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
