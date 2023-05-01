@@ -73,10 +73,18 @@ registr.addEventListener("click", (e) => {
     if (numb_inp2.value == "") {
       alert("Enter Number First!!!");
     } else if (email_inp2.value == "") {
-      alert("Enter Your E-mail!!!");
+      alert("Enter Your G-mail!!!");
+    } else if (!email_inp2.value.includes("@gmail.com")) {
+      email_inp2.value=''
+      alert("Your G-mail is not available");
+      return;
     } else if (password_inp2.value == "") {
       alert("Enter Password!!!");
-    } else if (password_inp3.value == "") {
+    }else if(password_inp2.value.length<8){
+      password_inp2.value=''
+       alert('Password Must Contain At List 8 Characters')
+    }
+    else if (password_inp3.value == "") {
       alert("Reenter Password!!!");
     } else if (password_inp2.value != password_inp3.value) {
       alert("Passwords Are Not The Same");
@@ -84,9 +92,12 @@ registr.addEventListener("click", (e) => {
   }
   if (e.target.closest(".main__passshow2")) {
     togglePassword2.addEventListener("click", () => {
-      if (password_inp2.type === "password" || password_inp3.type === "password" ) {
+      if (
+        password_inp2.type === "password" ||
+        password_inp3.type === "password"
+      ) {
         password_inp2.type = "text";
-      }  else {
+      } else {
         password_inp3.type = "password";
         password_inp2.type = "password";
       }
