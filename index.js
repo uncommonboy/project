@@ -2,8 +2,8 @@ const entry = document.querySelector(".wrap1");
 const sign_in = document.querySelector(".sign__in");
 const registr = document.querySelector(".registr");
 
-const numb = "93-531-08-98";
-const password = "asilbek1234";
+const numb = "1";
+const password = "1";
 
 entry.addEventListener("click", (e) => {
   if (e.target.closest(".responses__button1")) {
