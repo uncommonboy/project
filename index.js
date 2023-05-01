@@ -68,6 +68,7 @@ registr.addEventListener("click", (e) => {
   const password_inp3 = document.querySelector(".parol__inp3");
   const cancel = document.querySelector(".main__cancel2");
   const togglePassword2 = document.querySelector(".main__passshow2");
+  const wraper = document.querySelector(".wraper");
 
   if (e.target.closest(".main__button")) {
     if (numb_inp2.value == "") {
@@ -89,6 +90,9 @@ registr.addEventListener("click", (e) => {
     } else if (password_inp2.value != password_inp3.value) {
       alert("Passwords Are Not The Same");
     }
+    wraper.style.display = "flex";
+    registr.style.display = "none";
+    alert('you have successfully registered')
   }
   if (e.target.closest(".main__passshow2")) {
     togglePassword2.addEventListener("click", () => {
