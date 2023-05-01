@@ -66,8 +66,10 @@ registr.addEventListener("click", (e) => {
   const email_inp2 = document.querySelector(".email__inp2");
   const password_inp2 = document.querySelector(".parol__inp2");
   const password_inp3 = document.querySelector(".parol__inp3");
+  const cancel = document.querySelector(".main__cancel2");
+  const togglePassword2 = document.querySelector(".main__passshow2");
 
-if (e.target.closest(".main__button")) {
+  if (e.target.closest(".main__button")) {
     if (numb_inp2.value == "") {
       alert("Enter Number First!!!");
     } else if (email_inp2.value == "") {
@@ -76,9 +78,26 @@ if (e.target.closest(".main__button")) {
       alert("Enter Password!!!");
     } else if (password_inp3.value == "") {
       alert("Reenter Password!!!");
-    }else if(password_inp2.value!=password_inp3.value){
-      alert('Passwords Are Not The Same')
+    } else if (password_inp2.value != password_inp3.value) {
+      alert("Passwords Are Not The Same");
     }
+  }
+  if (e.target.closest(".main__passshow2")) {
+    togglePassword2.addEventListener("click", () => {
+      if (password_inp2.type === "password" || password_inp3.type === "password" ) {
+        password_inp2.type = "text";
+      }  else {
+        password_inp3.type = "password";
+        password_inp2.type = "password";
+      }
+    });
+  }
 
+  if (e.target.closest(".main__cancel2")) {
+    cancel.addEventListener("click", () => {
+      console.log("salom");
+      registr.style.display = "none";
+      entry.style.display = "block ";
+    });
   }
 });

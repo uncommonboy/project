@@ -200,7 +200,7 @@
     align-items: center;
     backdrop-filter: blur(20px);
 
-    &__cancel {
+    &__cancel2 {
       color: 2.875px solid #685ed6;
       display: flex;
       margin-left: 400px;
@@ -317,6 +317,11 @@
       background: #685ed6;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
       border-radius: 6px;
+    }
+    .main__passshow2 {
+      background-color: transparent;
+      display: flex;
+      margin-right: 130 px;
     }
   }
 }

@@ -292,7 +292,7 @@ h6 {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
-.registr .main__cancel {
+.registr .main__cancel2 {
   color: 2.875px solid #685ed6;
   display: flex;
   margin-left: 400px;
@@ -406,6 +406,11 @@ h6 {
   background: #685ed6;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
   border-radius: 6px;
+}
+.registr .main .main__passshow2 {
+  background-color: transparent;
+  display: flex;
+  margin-right: 130 px;
 }
 
 .wraper {
