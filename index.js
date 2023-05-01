@@ -1,6 +1,6 @@
 const entry = document.querySelector(".wrap1");
 const sign_in = document.querySelector(".sign__in");
-const  registr=document.querySelector('.registr')
+const registr = document.querySelector(".registr");
 
 const numb = "93-531-08-98";
 const password = "asilbek1234";
@@ -61,9 +61,24 @@ sign_in.addEventListener("click", (e) => {
   }
 });
 
-register.addEventListener('click',(e)=>{
-  const numb_inp2=document.querySelector('.')
-  if(e.target.closest('.main__button')){
-    if()
+registr.addEventListener("click", (e) => {
+  const numb_inp2 = document.querySelector(".number__inp2");
+  const email_inp2 = document.querySelector(".email__inp2");
+  const password_inp2 = document.querySelector(".parol__inp2");
+  const password_inp3 = document.querySelector(".parol__inp3");
+
+if (e.target.closest(".main__button")) {
+    if (numb_inp2.value == "") {
+      alert("Enter Number First!!!");
+    } else if (email_inp2.value == "") {
+      alert("Enter Your E-mail!!!");
+    } else if (password_inp2.value == "") {
+      alert("Enter Password!!!");
+    } else if (password_inp3.value == "") {
+      alert("Reenter Password!!!");
+    }else if(password_inp2.value!=password_inp3.value){
+      alert('Passwords Are Not The Same')
+    }
+
   }
-})
+});
