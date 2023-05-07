@@ -2,9 +2,8 @@ const entry = document.querySelector(".wrap1");
 const sign_in = document.querySelector(".sign__in");
 const registr = document.querySelector(".registr");
 
-const numb = "1";
-const password = "1";
-
+const numb = "935310898";
+const password = "12341234";
 entry.addEventListener("click", (e) => {
   if (e.target.closest(".responses__button1")) {
     const login = document.querySelector(".sign__in");
@@ -22,6 +21,8 @@ entry.addEventListener("click", (e) => {
 });
 
 sign_in.addEventListener("click", (e) => {
+  alert('number = "935310898" password = "12341234"; ')
+
   const numb_inp = document.querySelector(".number__inp");
   const password_inp = document.querySelector(".password__inp");
   const togglePassword = document.querySelector(".main__passshow");
