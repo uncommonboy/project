@@ -2,8 +2,8 @@ const entry = document.querySelector(".wrap1");
 const sign_in = document.querySelector(".sign__in");
 const registr = document.querySelector(".registr");
 
-const numb = "935310898";
-const password = "12341234";
+const numb = "1234";
+const password = "1234";
 entry.addEventListener("click", (e) => {
   if (e.target.closest(".responses__button1")) {
     const login = document.querySelector(".sign__in");
@@ -21,13 +21,14 @@ entry.addEventListener("click", (e) => {
 });
 
 sign_in.addEventListener("click", (e) => {
-  alert('number = "935310898" password = "12341234"; ')
-
   const numb_inp = document.querySelector(".number__inp");
   const password_inp = document.querySelector(".password__inp");
   const togglePassword = document.querySelector(".main__passshow");
   const cancel = document.querySelector(".main__cancel");
   if (e.target.closest(".main__button")) {
+    alert(
+      ' Hi here are the password and number ==> number = "1234" password = "1234"; '
+    );
     if (numb_inp.value == "") {
       console.log("salom");
       alert("Enter Number Fisrt!!!");
@@ -77,23 +78,22 @@ registr.addEventListener("click", (e) => {
     } else if (email_inp2.value == "") {
       alert("Enter Your G-mail!!!");
     } else if (!email_inp2.value.includes("@gmail.com")) {
-      email_inp2.value=''
+      email_inp2.value = "";
       alert("Your G-mail is not available");
       return;
     } else if (password_inp2.value == "") {
       alert("Enter Password!!!");
-    }else if(password_inp2.value.length<8){
-      password_inp2.value=''
-       alert('Password Must Contain At List 8 Characters')
-    }
-    else if (password_inp3.value == "") {
+    } else if (password_inp2.value.length < 8) {
+      password_inp2.value = "";
+      alert("Password Must Contain At List 8 Characters");
+    } else if (password_inp3.value == "") {
       alert("Reenter Password!!!");
     } else if (password_inp2.value != password_inp3.value) {
       alert("Passwords Are Not The Same");
     }
     wraper.style.display = "flex";
     registr.style.display = "none";
-    alert('you have successfully registered')
+    alert("you have successfully registered");
   }
   if (e.target.closest(".main__passshow2")) {
     togglePassword2.addEventListener("click", () => {
